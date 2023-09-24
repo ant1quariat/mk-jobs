@@ -1,0 +1,35 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+table {
+    border: 1px solid beige;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .2);
+    border-collapse: collapse;
+
+    width: 500px;
+    text-align: center;
+}
+
+caption {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+tr, td, th { border: 1px solid #8d8c8c; }
+
+td, th { padding: 10px; }
+
+th { background-color: lightgray; }
+
+td:first-child { width: 50px; }
