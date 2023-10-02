@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <form class="form-container" action="#">
+
+            <h3 class="form-item-title">Анкета</h3>
+
+            <div class="form-content">
+                <div class="form-group">
+                    <label for="forname">Фамилия</label>
+                    <input class="form-item-input" type="text" name="forname" id="forname">
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Имя</label>
+                    <input class="form-item-input" type="text" name="name" id="name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-Mail</label>
+                    <input class="form-item-input" type="text" name="email" id="email">
+                </div>
+
+                <div class="form-group">
+                    <input class="form-item-radio" type="radio" id="male" value="male" name="gender">
+                    <label for="male">Мужской</label>
+
+                    <input class="form-item-radio" type="radio" id="female" value="female" name="gender">
+                    <label for="female">Женский</label>
+                </div>
+
+                <div class="form-group">
+                    <select class="form-item-select" name="country" id="country">
+                        <option class="form-item-select_option default-option" value="none" selected>- Выберите страну -</option>
+                        <optgroup label="СНГ">
+                            <option class="form-item-select_option" value="ru">Россия</option>
+                            <option class="form-item-select_option" value="ru">Беларусь</option>
+                            <option class="form-item-select_option" value="uk">Украина</option>
+                            <option class="form-item-select_option" value="kz">Казахстан</option>
+                        </optgroup>
+
+                        <optgroup label="Европа">
+                            <option class="form-item-select_option" value="ge">Германия</option>
+                            <option class="form-item-select_option" value="fr">Франция</option>
+                            <option class="form-item-select_option" value="es">Испания</option>
+                            <option class="form-item-select_option" value="it">Италия</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <textarea class="form-item-textarea" name="about" id="about" cols="30" rows="4"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="birchday">Дата рождения</label>
+                    <input class="form-item-datetime" type="datetime-local" name="birchday" id="birchday">
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <div class="form-group-checkbox">
+                        <input class="form-item-checkbox" type="checkbox" id="red" value="red" name="color">
+                        <label for="red">Красный</label>
+                    </div>
+
+                    <div class="form-group-checkbox">
+                        <input class="form-item-checkbox" type="checkbox" id="blue" value="blue" name="color">
+                        <label for="blue">Синий</label>
+                    </div>
+
+                    <div class="form-group-checkbox">
+                        <input class="form-item-checkbox" type="checkbox" id="green" value="green" name="color">
+                        <label for="green">Зелёный</label>
+                    </div>
+
+                    <div class="form-group-checkbox">
+                        <input class="form-item-checkbox" type="checkbox" id="black" value="black" name="color">
+                        <label for="black">Черный</label>
+                    </div>
+                </div>
+
+                <div class="form-group buttons-group">
+                    <button class="form-item-button" type="submit">Сохранить</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
